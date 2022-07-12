@@ -20,6 +20,14 @@ app.get("/movies/:movie_id", (req, res) => {
 	res.render("show", { movie: movie });
 });
 
+app.get("/search", (req, res) => {
+	const keyword = req.query.keyword;
+	const findMovie = movieList.results.filter((movie) =>
+		movie.title.toLowerCase().includes(keyword.toLowerCase())
+	);
+	res.render("index", { movies: findMovie });
+});
+
 app.listen(port, () => {
 	console.log(`http://localhost:${port}`);
 });
