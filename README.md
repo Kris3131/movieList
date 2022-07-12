@@ -14,6 +14,7 @@
 ## 使用工具
 - [Express@4.16.4](https://www.npmjs.com/package/express)
 - [Express-Handlebars@3.0.0](https://www.npmjs.com/package/express-handlebars)
+- [Bootstrap](https://getbootstrap.com/)
 
 ### 畫面截圖
 ![電影列表](./public/images/readme01.png)
